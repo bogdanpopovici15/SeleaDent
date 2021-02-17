@@ -1,0 +1,32 @@
+﻿<div class="modal right  fade" id="add-new-buget-category-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document" data-bind="with: NewBugetCategoryVM">
+        <div class="modal-content ">
+            <div class="modal-header clearfix">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-bind="click: HideModal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Save Category</h4><span id="aditionalTitle"></span>
+            </div>
+            <div class="modal-internal-notes clearfix modal-body" id="view-content-body">
+                <form class="d-simple-form one-col" id="save-buget-category-form">
+                    <div class="d-form-entry d-form-text-entry">
+                        <label>Name</label>
+                        <div>
+                            <input id="Name" type="text" placeholder="Type Name" data-bind="value: Name" />
+                        </div>
+                    </div>
+
+                    <div class="d-form-entry d-form-text-entry">
+                        <label>Organization</label>
+                        <div>
+                            <select  data-bind="options: OrganizationList, optionsText: 'Name', optionsValue: 'Id', value: OrganizationId"></select>
+                        </div>
+                    </div>
+                    <div class="d-form-panel">
+                        <input type="button" class="primary-button" value="Save" data-bind="click: Save" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

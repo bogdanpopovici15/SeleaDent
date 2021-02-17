@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleaDent.Web", "SeleaDent.Web\SeleaDent.Web.csproj", "{650ED0E3-23D8-4CDA-84B3-1F02CFAA225A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{DE139985-CFA4-45E5-8106-0CCBC20911DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataLayer", "DataLayer", "{D2BF5769-1381-444E-B83E-FD6571AC28E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{E3C6EE63-EB09-4670-B6F7-4460AEAA192C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleaDent.DataLayer", "SeleaDent.DataLayer\SeleaDent.DataLayer.csproj", "{491EAE19-444B-41D2-A192-6579AFE14106}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{2CDFBBA0-3AA2-4AC4-BD6C-E4169A30A118}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership", "Membership\Membership.csproj", "{030C846D-6856-4DA3-9496-E3D840AFA75F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleaDent.BussinessLogic", "SeleaDent.BussinessLogic\SeleaDent.BussinessLogic.csproj", "{CCFEF3F0-07C5-489B-9E18-0C8244BF7E33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{650ED0E3-23D8-4CDA-84B3-1F02CFAA225A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{650ED0E3-23D8-4CDA-84B3-1F02CFAA225A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{650ED0E3-23D8-4CDA-84B3-1F02CFAA225A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{650ED0E3-23D8-4CDA-84B3-1F02CFAA225A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{491EAE19-444B-41D2-A192-6579AFE14106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{491EAE19-444B-41D2-A192-6579AFE14106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{491EAE19-444B-41D2-A192-6579AFE14106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{491EAE19-444B-41D2-A192-6579AFE14106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{030C846D-6856-4DA3-9496-E3D840AFA75F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{030C846D-6856-4DA3-9496-E3D840AFA75F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{030C846D-6856-4DA3-9496-E3D840AFA75F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{030C846D-6856-4DA3-9496-E3D840AFA75F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCFEF3F0-07C5-489B-9E18-0C8244BF7E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFEF3F0-07C5-489B-9E18-0C8244BF7E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFEF3F0-07C5-489B-9E18-0C8244BF7E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFEF3F0-07C5-489B-9E18-0C8244BF7E33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{650ED0E3-23D8-4CDA-84B3-1F02CFAA225A} = {DE139985-CFA4-45E5-8106-0CCBC20911DB}
+		{491EAE19-444B-41D2-A192-6579AFE14106} = {D2BF5769-1381-444E-B83E-FD6571AC28E3}
+		{030C846D-6856-4DA3-9496-E3D840AFA75F} = {2CDFBBA0-3AA2-4AC4-BD6C-E4169A30A118}
+		{CCFEF3F0-07C5-489B-9E18-0C8244BF7E33} = {E3C6EE63-EB09-4670-B6F7-4460AEAA192C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED9D5A8E-952B-48BC-B27B-0F73AB892041}
+	EndGlobalSection
+EndGlobal

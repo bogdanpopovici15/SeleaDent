@@ -1,0 +1,190 @@
+﻿.site-header {
+    display: flex;
+    justify-content: space-between;
+    height: 96px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #4abff4
+}
+
+.user-panel {
+    float: right;
+    margin-top: -10px;
+}
+
+.site-header .d-site-translation-switch {
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.site-header .d-theme-switch {
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.d-user-menu {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 100px;
+    padding: 0px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.logout-panel .user-img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.d-user-menu label {
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.d-user-menu-container {
+    position: absolute;
+    display: table;
+    right: -55px;
+    top: 30px;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.d-user-menu:hover .d-user-menu-item {
+    display: block;
+}
+
+.d-user-menu-item::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+.d-user-menu-item {
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+    .d-user-menu-item * {
+        cursor: pointer;
+    }
+
+
+    .d-user-menu-item:last-child {
+        border-bottom: 0px;
+    }
+
+.site-header .school-panel img {
+    height: 55px;
+    width: 55px;
+    float: left;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.site-header .school-panel {
+    height: 48px;
+    cursor: pointer;
+}
+
+    .site-header .school-panel label {
+        margin-top: 15px;
+        margin-left: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+
+.site-header .logout-panel .notify-panel {
+    float: left;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+.site-header .logout-panel .notification-panel {
+    display: inline-block;
+    position: relative;
+}
+
+    .site-header .logout-panel .notification-panel .notification-dot {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+        border-radius: 50%;
+        top: -18px;
+        right: -15px;
+        padding-top: 6px;
+        letter-spacing: 0.18px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+.add-menu {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 0px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    z-index: 1000;
+}
+
+.add-menu-container {
+    position: absolute;
+    display: table;
+    border-radius: 4px;
+    right: -33px;
+    top: 30px;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.add-menu:hover .add-menu-item {
+    display: block;
+}
+
+.add-menu-item::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+}
+
+.add-menu-item {
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+    .add-menu-item * {
+        cursor: pointer;
+    }
+
+.d-user-menu-item:last-child {
+    border-bottom: 0px;
+}

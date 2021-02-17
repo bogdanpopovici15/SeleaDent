@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\SeleaDent\Membership\bin\Debug\Membership.dll
+C:\Users\User\Desktop\SeleaDent\Membership\bin\Debug\Membership.pdb
+C:\Users\User\Desktop\SeleaDent\Membership\obj\Debug\Membership.csprojAssemblyReference.cache
+C:\Users\User\Desktop\SeleaDent\Membership\obj\Debug\Membership.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\SeleaDent\Membership\obj\Debug\Membership.dll
+C:\Users\User\Desktop\SeleaDent\Membership\obj\Debug\Membership.pdb

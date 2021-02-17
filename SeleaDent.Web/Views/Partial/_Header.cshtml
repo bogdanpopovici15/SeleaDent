@@ -1,0 +1,25 @@
+﻿<div class="site-header" id="site-header">
+    <div class="logout-panel">
+        <!--ko with: LoggedUserViewModel-->
+        <img class="user-img" onerror="loadDefaultPicture(this)" data-bind="attr: {src: ProfilePictureUrl}" />
+        <div class="d-user-menu">
+            <label>
+                Welcome, <label data-bind="text: FirstName"></label>
+            </label>
+
+            <div class="d-user-menu-container">
+                <div class="d-user-menu-item">
+                    <label onclick="showFlyout(4)">My Account</label>
+                </div>
+                <div class="d-user-menu-item">
+                    @using (Html.BeginForm(MVC.Account.ActionNames.LogOff, MVC.Account.Name, FormMethod.Post, new { id = "logoutForm" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <a id="logout-link" href="javascript:void(0);" onclick="logout();"><label>Log out</label></a>
+                    }
+                </div>
+            </div>
+        </div>
+        <!-- /ko -->
+    </div>
+</div>

@@ -1,0 +1,8 @@
+﻿<div class="buget-page" data-bind="with: AllBugetCategoriesVM">
+    <input type="button" value="Add buget category" data-bind="click : AddCategory"/>
+    <div class="lisiting-buget" data-bind="foreach: ListBugetCategories">
+        <div class="item-list">
+            <label data-bind="text: Name"></label>
+        </div>
+    </div>
+</div>

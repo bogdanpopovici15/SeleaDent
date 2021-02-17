@@ -1,0 +1,11 @@
+C:\Users\User\Desktop\SeleaDent\SeleaDent.DataLayer\bin\Debug\SeleaDent.DataLayer.dll.config
+C:\Users\User\Desktop\SeleaDent\SeleaDent.DataLayer\bin\Debug\SeleaDent.DataLayer.dll
+C:\Users\User\Desktop\SeleaDent\SeleaDent.DataLayer\bin\Debug\SeleaDent.DataLayer.pdb
+C:\Users\User\Desktop\SeleaDent\SeleaDent.DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\SeleaDent\SeleaDent.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\SeleaDent\SeleaDent.DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\SeleaDent\SeleaDent.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\SeleaDent\SeleaDent.DataLayer\obj\Debug\SeleaDent.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\SeleaDent\SeleaDent.DataLayer\obj\Debug\SeleaDent.DataLayer.csproj.CopyComplete
+C:\Users\User\Desktop\SeleaDent\SeleaDent.DataLayer\obj\Debug\SeleaDent.DataLayer.dll
+C:\Users\User\Desktop\SeleaDent\SeleaDent.DataLayer\obj\Debug\SeleaDent.DataLayer.pdb

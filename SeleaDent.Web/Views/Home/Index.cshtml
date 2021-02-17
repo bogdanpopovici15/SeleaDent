@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!-- For routing partial views -->
+<div id="view">
+    <label class="loading-text">Loading...</label>
+</div>
+
+
+<!-- Partial Inline Views -->
+<!-- Home View -->
+<script type="text/html" id="home_html">
+    <div id="HomeView">
+        <div id="home-organization">
+            @Html.Partial(MVC.Pages.Views.BugetPage)
+        </div>
+    </div>
+</script>

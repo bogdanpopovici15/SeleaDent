@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\SeleaDent\SeleaDent.BussinessLogic\bin\Debug\SeleaDent.BussinessLogic.dll
+C:\Users\User\Desktop\SeleaDent\SeleaDent.BussinessLogic\bin\Debug\SeleaDent.BussinessLogic.pdb
+C:\Users\User\Desktop\SeleaDent\SeleaDent.BussinessLogic\bin\Debug\SeleaDent.DataLayer.dll
+C:\Users\User\Desktop\SeleaDent\SeleaDent.BussinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\SeleaDent\SeleaDent.BussinessLogic\bin\Debug\SeleaDent.DataLayer.pdb
+C:\Users\User\Desktop\SeleaDent\SeleaDent.BussinessLogic\bin\Debug\SeleaDent.DataLayer.dll.config
+C:\Users\User\Desktop\SeleaDent\SeleaDent.BussinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\SeleaDent\SeleaDent.BussinessLogic\obj\Debug\SeleaDent.BussinessLogic.csprojAssemblyReference.cache
+C:\Users\User\Desktop\SeleaDent\SeleaDent.BussinessLogic\obj\Debug\SeleaDent.BussinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\SeleaDent\SeleaDent.BussinessLogic\obj\Debug\SeleaDent.BussinessLogic.csproj.CopyComplete
+C:\Users\User\Desktop\SeleaDent\SeleaDent.BussinessLogic\obj\Debug\SeleaDent.BussinessLogic.dll
+C:\Users\User\Desktop\SeleaDent\SeleaDent.BussinessLogic\obj\Debug\SeleaDent.BussinessLogic.pdb

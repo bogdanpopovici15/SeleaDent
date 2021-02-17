@@ -1,0 +1,1417 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/*################# RESET ##################*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+input, select, textarea {
+    outline: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*##########################################*/
+#root {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+.site-footer {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+    letter-spacing: 0;
+    box-sizing: border-box;
+}
+
+#root, .site-container {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    padding-top: 80px;
+    width: 100%;
+    display: inline-flex;
+    box-sizing: border-box;
+    min-height: 100%;
+    position: absolute;
+}
+
+#view .loading-text {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.33px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.site-container {
+    width: 100%;
+    display: inline-flex;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+.site-body {
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100%;
+    width: 100vw;
+    padding: 30px;
+}
+
+.site-left-side {
+    width: 310px;
+    display: inline-flex;
+    overflow: hidden;
+    vertical-align: top;
+    margin-bottom: -60px;
+    margin-top: 15px;
+    z-index: 900;
+}
+
+.site-right-side {
+    width: calc(100% - 60px);
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.d-site-wrapper {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.d-page-heading {
+    display: table;
+    width: 100%;
+    padding: 20px
+}
+
+.d-page-heading-action-group {
+    display: table;
+    float: right;
+}
+
+.d-page-heading-title label {
+    float: left;
+    margin-top: 10px;
+}
+
+.user-panel {
+    float: right;
+    margin-right: 20px;
+}
+
+.container-group .n-tab:first-child {
+    margin-left: 0px;
+}
+
+/*FILTER COMPONENT*/
+.filter-container {
+    padding: 20px;
+}
+
+.action-buttons {
+    padding: 30px;
+    float: right;
+}
+
+.filter-inputs {
+    display: inline-block;
+}
+
+.filter-entry {
+    display: inline-block;
+}
+
+.filter-entry {
+    padding: 20px;
+}
+
+.float-left {
+    float: left;
+}
+
+.display-block {
+    display: block;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.d-filter-entry label {
+    font-size: 13px;
+}
+
+/*Footer and header*/
+.site-footer, .site-header {
+    padding: 20px 60px 20px 20px;
+}
+/*End region Footer*/
+
+/* Buttons*/
+.primary-button, .secondary-button, .tertiary-button {
+    height: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.small-button {
+    height: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*END REGION BUTTONS*/
+
+/* Inputs*/
+input[type='text'], input[type='password'] {
+    height: 44px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.d-filter-entry input[type='text'], .d-filter-entry input[type='password'] {
+    height: 37px;
+    min-width: 218px;
+    padding-left: 10px;
+}
+
+.d-form-entry input[type='text'] {
+    height: 36px;
+    padding-left: 10px;
+}
+
+.text-input {
+    width: 250px;
+    height: 36px;
+}
+
+.textbox-primary {
+    border-radius: 4px;
+    height: 36px;
+    padding-left: 10px;
+}
+
+.d-filter-entry .select-tags {
+    clear: both;
+    float: right;
+}
+/*END REGION Inputs*/
+
+
+.clearfix {
+    overflow: auto;
+}
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+/*More actions*/
+.d-more-actions > label {
+    width: 22px;
+    height: 22px;
+    display: block;
+    cursor: pointer;
+}
+
+.edit-button {
+    width: 22px;
+    height: 22px;
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.d-more-actions {
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.d-more-action-list {
+    min-width: 100px;
+    border-radius: 4px;
+    position: absolute;
+    right: 7px;
+    top: 17px;
+    z-index: 1;
+    opacity: 1;
+    display: none;
+}
+
+.d-more-actions:hover .d-more-action-list {
+    display: block;
+}
+
+.d-more-action-list .d-more-action-item {
+    cursor: pointer;
+    height: 34px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+    .d-more-action-list .d-more-action-item:first-child {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    .d-more-action-list .d-more-action-item:last-child {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+/*End region More actions*/
+
+/*Tags*/
+.d-tag {
+    padding: 10px;
+    text-align: center;
+    margin: 2px 2px;
+    display: inline-block;
+    line-break: normal;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+/*End regin tags*/
+
+/* Rounded sliders */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 39px;
+    height: 20px;
+}
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 12px;
+        width: 12px;
+        left: 0px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+/*End region sliders*/
+
+/*Region Flyout Edit User*/
+
+.edit-user-modal-class .img-profile {
+    width: 63px;
+    height: 63px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.edit-user-modal-class .phone-prefix {
+    display: inline-block;
+    width: 85px !important;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.edit-user-modal-class #PhoneNumber {
+    width: calc(100% - 100px) !important;
+    display: inline-block !important;
+    vertical-align: top;
+    margin-left: 10px;
+    min-width: unset !important;
+}
+
+.edit-user-modal-class .modal-title {
+    padding-left: 10px;
+}
+
+.edit-user-modal-class .field-validation-error {
+    bottom: -15px;
+    right: 0px;
+}
+/*End region Flyout Edit User*/
+
+
+
+/*Region Flyout Edit Chid*/
+.edit-child-modal .modal-header {
+}
+
+.edit-child-modal .modal-content {
+    width: 470px;
+}
+
+.edit-child-modal .modal-internal-notes {
+}
+
+.edit-child-modal .modal-title {
+    padding: 0px;
+}
+
+.edit-child-modal .img-wrapper {
+    width: auto !important;
+    position: relative;
+}
+
+.edit-child-modal .img-profile {
+    width: 97px;
+    height: 97px;
+    object-fit: cover;
+}
+
+.edit-child-modal .tooltip-alg {
+    position: absolute;
+    left: 0px;
+    bottom: -25px;
+}
+
+.edit-child-modal .delete-picture {
+    right: 0px;
+    left: unset;
+}
+
+.edit-child-modal .child-info-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-child-modal .form-entry {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 10px;
+    position: relative;
+    width: 280px;
+}
+
+.edit-child-modal label {
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.02px;
+    color: #928da5;
+    margin-bottom: 8px;
+}
+
+.edit-child-modal .form-entry input,
+.edit-child-modal .form-entry select {
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.02px;
+    color: #171717;
+    background-color: #f5f4fc;
+    width: 100%;
+    padding-left: 18px;
+    margin-bottom: 0px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 0px;
+}
+
+.edit-child-modal .birth-date {
+    width: 100%;
+}
+
+    .edit-child-modal .birth-date .glyphicon-calendar {
+        position: absolute;
+        right: 10px;
+        top: 38px;
+    }
+
+.edit-child-modal .select-entry {
+    width: 100%;
+}
+
+    .edit-child-modal .select-entry select {
+        padding-right: 15px;
+    }
+
+.edit-child-modal .d-form-text-entry {
+    margin-left: 0px;
+}
+
+.edit-child-modal .item-list .organiser-name {
+    font-size: 13px;
+    padding: 5px !important;
+    margin-right: 5px !important;
+    margin-top: 0px !important;
+}
+
+.edit-child-modal .d-form-text-entry {
+    margin-left: 0px !important;
+}
+
+/*End region Flyout Edit CHild*/
+
+
+/*Region Flyout Import Users*/
+#import-users-modal .secondary-button {
+    margin-top: 20px;
+}
+
+#import-users-modal .file-name {
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    color: #738188;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+#import-users-modal .primary-button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+/*End region*/
+
+
+/*Region Flayout Edit Profile*/
+#edit-profile-modal .img-profile {
+    width: 63px;
+    height: 63px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+#edit-profile-modal .flyout-level-1 {
+    width: 30%;
+}
+
+#show-user-type {
+    clear: left;
+}
+/*End region Flayout Edit User*/
+
+/*Region Flayout Edit Event*/
+#add-new-event-modal .n-tab:first-child {
+    margin-left: 0px;
+}
+
+#add-new-event-modal .n-tabs-header {
+    border-bottom: none;
+}
+
+#add-new-event-modal .n-tab {
+    border-radius: 4px;
+    min-width: 190px;
+}
+
+#add-new-event-modal .n-tab-active {
+    border-radius: 4px;
+}
+
+#add-new-event-modal .custom-date input[type='text'] {
+    min-width: 100px;
+}
+
+#add-new-event-modal .custom-date label {
+    margin-right: 20px;
+}
+
+#add-new-event-modal .custom-date select {
+    width: 40px !important;
+    min-width: 90px !important;
+    margin-right: 20px;
+}
+
+#add-new-event-modal .custom-date > div {
+    width: 350px;
+}
+
+#add-new-event-modal .custom-date .input-group {
+    width: 40px !important;
+}
+
+#add-new-event-modal #custom-date {
+    display: none;
+}
+
+#add-new-event-modal .custom-date .container-flex {
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+/*End region Flayout Edit Event*/
+
+/*****Selector week days********/
+.week-days-selector input {
+    display: none !important;
+}
+
+    .week-days-selector input[type=checkbox] + label {
+        display: inline-block;
+        border-radius: 4px;
+        height: 40px;
+        width: 30px;
+        margin-right: 3px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+/***********End region selector weekdays*******************/
+
+/*Calendar*/
+.calendar {
+    position: absolute;
+    right: 200px;
+}
+
+    .calendar .ui-datepicker {
+        width: 20em;
+    }
+
+    .calendar .ui-widget-content {
+        border: none !important;
+    }
+
+    .calendar .ui-state-highlight, .ui-widget-content .ui-state-highlight {
+        border-radius: 16.5px;
+        width: 34px;
+        height: 34px;
+    }
+
+    .calendar .ui-widget-content .ui-state-active {
+        border-radius: 16.5px;
+        width: 34px;
+        height: 34px;
+    }
+
+    .calendar tr {
+        line-height: 30px;
+    }
+
+    .calendar .ui-datepicker td {
+        padding: 10px
+    }
+
+        .calendar .ui-datepicker td a {
+            text-align: center;
+        }
+
+/*End region Calendar*/
+
+/*BOOTSTRAP MODAL SKINNING*/
+body.modal-open {
+    margin: 0 !important;
+}
+
+.modal-backdrop.in {
+    opacity: 0 !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.modal {
+    background-color: rgba(0,0,0,0.4);
+}
+
+    .modal * {
+        outline: none;
+    }
+
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-25 {
+    margin-top: 25px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.margin-left-10 {
+    margin-left: 10px !important;
+}
+
+.margin-left-15 {
+    margin-left: 15px;
+}
+
+.margin-left-20 {
+    margin-left: 20px;
+}
+
+.margin-left-25 {
+    margin-left: 25px;
+}
+
+.margin-left-30 {
+    margin-left: 30px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 25px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+
+.margin-right-10 {
+    margin-right: 10px;
+}
+
+.margin-right-15 {
+    margin-right: 15px;
+}
+
+.margin-right-20 {
+    margin-right: 20px;
+}
+
+.margin-right-25 {
+    margin-right: 25px;
+}
+
+.margin-right-30 {
+    margin-right: 30px;
+}
+
+.container-flex {
+    display: flex !important;
+}
+
+
+/*############################### PAGINATION CSS #############################*/
+
+.generic-filter-container + .n-tabs > .n-tabs-header + .n-tabs-container > .n-tab-body > .generic-table + .pagination-actions {
+    height: 70px;
+    line-height: 70px;
+    width: 100%;
+}
+
+    .generic-filter-container + .n-tabs > .n-tabs-header + .n-tabs-container > .n-tab-body > .generic-table + .pagination-actions .page-button > div {
+        height: 28px;
+        line-height: 30px;
+        padding: 0 10px;
+        text-align: center;
+        font-size: 15px;
+        vertical-align: top;
+        cursor: pointer;
+        border-radius: 2px;
+        text-transform: capitalize;
+    }
+
+    .generic-filter-container + .n-tabs > .n-tabs-header + .n-tabs-container > .n-tab-body > .generic-table + .pagination-actions .page-button {
+        display: inline-block;
+    }
+
+.active-page-navigation {
+    cursor: pointer !important;
+    font-size: 14px;
+    margin-right: 5px;
+    line-height: 20px;
+}
+
+.inactive-page-navigation {
+    cursor: default !important;
+}
+
+.page-button.active {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    line-height: 20px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.page-button.inactive {
+    cursor: pointer !important;
+}
+
+.page-size-wrapper,
+.page-jump-wrapper {
+    margin-left: 10px;
+    height: 28px;
+    line-height: 20px;
+    vertical-align: top;
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+    .page-size-wrapper span,
+    .page-jump-wrapper span {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    .page-size-wrapper > select {
+        float: left;
+        height: 28px;
+        width: 63px;
+        padding: 0 5px;
+        border-radius: 4px;
+    }
+
+.page-jump-wrapper {
+    font-size: 0;
+}
+
+    .page-jump-wrapper > * {
+        font-size: 14px;
+        vertical-align: central;
+        margin-right: 10px;
+    }
+
+    .page-jump-wrapper > input {
+        width: 60px !important;
+        height: 28px !important;
+        line-height: 40px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+.page-jump-button {
+    cursor: pointer;
+    margin-top: 2px;
+    height: 28px;
+    float: right;
+    margin-left: 20px;
+    line-height: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.total-pages {
+    float: right;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+/*############################### FILTER CSS #############################*/
+.generic-filter-container {
+    display: block;
+    box-sizing: border-box;
+    width: auto;
+}
+
+    .generic-filter-container * {
+        outline: none;
+    }
+
+    .generic-filter-container .generic-filter-buttons,
+    .generic-filter-container .generic-filter-entry {
+        display: table;
+        float: left;
+    }
+
+    .generic-filter-container .generic-filter-entry {
+        margin-right: 20px;
+    }
+
+        .generic-filter-container .generic-filter-entry:last-of-type {
+            margin-right: 0px;
+        }
+
+        .generic-filter-container .generic-filter-entry > input[type=text],
+        .generic-filter-container .generic-filter-entry > select {
+            height: 33px;
+            border-radius: 4px;
+            padding-left: 10px;
+            display: block;
+            min-width: 210px;
+            margin-top: 10px;
+            font-size: 13px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: -0.22px;
+        }
+
+        .generic-filter-container .generic-filter-entry > label {
+            display: block;
+            color: #324e64;
+        }
+
+    .generic-filter-container .generic-filter-buttons {
+        float: right;
+    }
+
+        .generic-filter-container .generic-filter-buttons > input[type=button] {
+            margin-right: 15px;
+        }
+
+            .generic-filter-container .generic-filter-buttons > input[type=button]:last-of-type {
+                margin-right: 0px;
+            }
+
+    .generic-filter-container form {
+        display: table;
+        width: 100%;
+    }
+
+
+.generic-table th {
+    vertical-align: middle !important;
+    padding: 0 15px;
+}
+
+.generic-table td {
+    padding: 0 15px;
+    line-height: 60px;
+    text-align: left;
+}
+
+.generic-filter-buttons input[type='button'] {
+    line-height: 38px;
+    vertical-align: bottom;
+}
+
+.generic-filter-buttons {
+    line-height: 63px;
+}
+
+.generic-table > thead > tr {
+    height: 60px;
+    font-size: 15px;
+}
+
+.generic-table > tbody > tr {
+    height: 60px;
+}
+
+
+.filter-by-date {
+    display: flex;
+    height: 39px;
+    margin-bottom: 20px;
+}
+
+    .filter-by-date .search {
+        margin-right: 20px;
+        width: 200px;
+        position: relative;
+    }
+
+        .filter-by-date .search input {
+            height: 33px !important;
+            padding: 10px !important;
+            margin-bottom: 0px !important;
+            cursor: pointer !important;
+            padding-left: 30px !important;
+            border-radius: 4px;
+        }
+
+.filter-pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: baseline;
+    width: 740px;
+}
+
+    .filter-pagination form {
+        display: flex;
+        align-items: baseline;
+    }
+
+.button-clear {
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+
+.filter-by-date .search img:first-child {
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+.filter-by-date .search i:last-child {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.filter-by-date .input-search {
+    width: 200px;
+    margin-right: 20px;
+    padding-left: 10px !important;
+    height: 33px !important;
+    padding: 10px !important;
+    margin-bottom: 0px !important;
+    cursor: pointer !important;
+}
+/*########################################################################*/
+
+/* end pagination css */
+.current-selected-page {
+    color: white;
+    background-color: #64b1e9;
+}
+
+.pagination-actions {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+}
+
+.page-input {
+    float: left;
+    margin-top: 13px;
+    margin-left: 5px;
+}
+/*########################################################################*/
+
+
+/****Loading*****/
+.loading-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+}
+
+.lds-ellipsis {
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    top: 50%;
+    margin-top: -32px;
+    left: 50%;
+    margin-left: -32px;
+    z-index: 2000;
+}
+
+    .lds-ellipsis div {
+        z-index: 2000;
+        position: absolute;
+        top: 27px;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+
+        .lds-ellipsis div:nth-child(1) {
+            left: 6px;
+            animation: lds-ellipsis1 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(2) {
+            left: 6px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(3) {
+            left: 26px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(4) {
+            left: 45px;
+            animation: lds-ellipsis3 0.6s infinite;
+        }
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(19px, 0);
+    }
+}
+
+/****End region loading****/
+
+/*############################### Tooltip #############################*/
+.tooltip-alg {
+    position: relative;
+    display: inline-block;
+}
+
+    .tooltip-alg .tooltiptext {
+        visibility: hidden;
+        text-align: center;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        height: auto;
+        border-radius: 5px;
+        position: absolute;
+        font-size: 14px;
+        line-height: 2;
+        padding: 5px 10px;
+        top: 40px;
+        min-width: 150px;
+        max-width: 300px;
+        left: -4px;
+    }
+
+    .tooltip-alg:hover .tooltiptext {
+        visibility: visible;
+    }
+
+
+    .tooltip-alg .tooltiptext:before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        left: 5px;
+        top: -10px;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+    }
+
+.tooltip-wrapper:hover .tooltip-content {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+
+
+
+/***Preview Img***/
+
+.container-picture {
+    position: relative;
+    cursor: pointer;
+}
+
+    .container-picture .preview-img {
+        display: none;
+        box-shadow: 0px 0px 5px #aaa;
+        position: absolute;
+        transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
+        width: 250px;
+        max-height: 250px;
+        background-color: #fff;
+        object-fit: contain;
+    }
+
+
+    .container-picture:hover .preview-img {
+        display: block;
+        top: 0;
+        left: 100%;
+        z-index: 1;
+        opacity: 1;
+    }
+
+
+.activity-photo {
+    position: relative;
+    cursor: pointer;
+}
+
+    .activity-photo .preview-img {
+        display: none;
+        box-shadow: 0px 0px 5px #aaa;
+        position: absolute;
+        transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
+        width: 250px;
+        max-height: 250px;
+        background-color: #fff;
+        object-fit: contain;
+    }
+
+
+    .activity-photo:hover .preview-img {
+        display: block;
+        top: 0;
+        left: 100%;
+        z-index: 1;
+        opacity: 1;
+    }
+/****End preview Img*****/
+
+/******Search message*********/
+.search-container-message {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column;
+}
+
+    .search-container-message label {
+        font-size: 12px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.2px;
+        color: #928da5;
+        margin-bottom: 5px;
+    }
+
+    .search-container-message input {
+        border-radius: 4px;
+        width: 250px;
+        height: 33px;
+    }
+
+.serach-input-container {
+    position: relative;
+    width: 250px;
+}
+
+    .serach-input-container .clear {
+        position: absolute;
+        right: 10px;
+        top: 12px;
+    }
+
+/*-------------------------------------------------
+        intpus
+  -------------------------------------------------*/
+.d-filter-entry input[type='text'], .d-filter-entry select {
+    border-radius: 4px;
+}
+
+.d-form-entry input[type='text'], .d-form-entry input[type='password'] {
+    height: 44px;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.d-form-entry textarea {
+    border-radius: 4px;
+    resize: none;
+}
+
+.d-form-entry select {
+    border-radius: 4px;
+    resize: none;
+}
+
+.d-form-entry > .d-form-entry-action {
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+}
+
+.d-form-entry .subtitle {
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+
+.d-pagination-group input[type='text'], .d-pagination-group select {
+    border-radius: 4px;
+}
+
+
+svg {
+    width: 70px;
+    height: 70px;
+}
+
+    svg:hover {
+        fill: red;
+    }
